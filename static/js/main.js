@@ -238,7 +238,7 @@ async function loadInternships() {
             html += `
                 <div class="project-card glass-card">
                     <div style="padding: 0.5rem 0;">
-                        <h3 style="font-size: 2.6rem; font-weight: 700; text-align: center; margin-bottom: 0.5rem; margin-top:0px; color: var(--text-color, #F8FAFC); word-break: break-word;">
+                        <h3 style="font-size: 2.6rem; font-weight: 700; text-align: center; margin-bottom: 0.5rem; margin-top:0px; color: var(--text); word-break: break-word;">
                             ${item.role}
                         </h3>
                         
