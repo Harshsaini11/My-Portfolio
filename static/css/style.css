@@ -1135,39 +1135,40 @@ body.admin-mode #hero-image-container:hover .btn-edit-avatar {
 
 
 .contact-form input,
-.contact-form textarea{
-
-
-    width:100%;
-
-    padding:15px;
-
-    margin-bottom:20px;
-
-    border:none;
-
-    outline:none;
-
-    border-radius:10px;
-
-    background:white;
-
-    color:#111;
-
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.08); /* Halka border clean look ke liye */
+    outline: none;
+    border-radius: 12px;
+    background: #ffffff;
+    color: var(--text);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06); /* Card jaisi smooth shadow */
+    transition: var(--transition);
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.2);
+    transform: translateY(-2px);
+}
 
-
+/* Dark mode ke styles */
 body.dark .contact-form input,
-body.dark .contact-form textarea{
-
-
-    background:#1e293b;
-
-    color:white;
-
+body.dark .contact-form textarea {
+    background: #1e293b;
+    color: var(--text);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+body.dark .contact-form input:focus,
+body.dark .contact-form textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.25);
+}
 
 
 
